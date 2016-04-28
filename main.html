@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Accounting Cycle</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+<script>
+    var socket = io.connect();
+    socket.on ('new-journal-entry', function (entry) {
+        console.log(entry);
+    });
+    socket.on ('new-taccount', function (account) {
+       console.log(account); 
+    });
+    socket.on ('trail-balance', function (trail_balance) {
+       console.log(trail_balance);
+    });
+    // socket.emit('add-journal-entry', { date     : Date.now,
+    //                                title    : "Title",
+    //                                type     : 1,
+    //                                transactions : [
+    //                                    {
+    //                                        title    : "cash",
+    //                                        amount   : 10000,
+    //                                        unit     : '$',
+    //                                        type     : 1
+    //                                    },
+    //                                    {
+    //                                        title    : "stock",
+    //                                        amount   : 10000,
+    //                                        unit     : '$',
+    //                                        type     : 0
+    //                                    }
+    //                                ]
+    //                             });    
+</script>
+</head>
+<body>
+</body>
+</html>

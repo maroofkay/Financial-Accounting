@@ -1,0 +1,19 @@
+{
+  "name": "financial-management-cycle",
+  "version": "0.0.0",
+  "description": "backend (node.js service) for financial management cycle",
+  "main": "main.js",
+  "scripts": {
+    "development": "nodemon main.js",
+    "deployment": "node main.js"
+  },
+  "author": "Maroof Khan <maroof-khan@live.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "http": "0.0.0",
+    "mongoose": "^4.4.12",
+    "mongoose-auto-increment": "^5.0.1",
+    "socket.io": "^1.4.5"
+  }
+}
